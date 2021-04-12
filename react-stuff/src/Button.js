@@ -1,8 +1,8 @@
-const Button = ({elem, handleClick, state}) => {
+const Button = ({elem, handleClick, }) => {
 
     return(
 
-        <button className = 'button' onClick={()=> handleClick(elem,state)}> {elem} </button>
+        <button className = 'button' onClick={()=> handleClick(elem)}> {elem} </button>
     )
 }
 

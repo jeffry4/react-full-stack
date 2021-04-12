@@ -12,7 +12,7 @@ class App extends Component {
     };
     this.handleClick = this.handleClick.bind(this)
   }
-handleClick(elem,state){
+handleClick(elem){
   const user = document.querySelector('#user')
   const post = document.querySelector('#post')
   const entry = document.querySelector('#entry')
@@ -102,25 +102,20 @@ handleClick(elem,state){
   render(){
     return(
       <div>
-        
         {/* <header class = 'header'> */}
          <Buttons 
          arr = {['viewAll','create','viewSpec','update','delete']}
          handleClick = {this.handleClick}
-         state = {this.state.user}
+        //  state = {this.state.user}
          />
         {/* </header> */}
         < Entry msg = {this.state.msg}/>
         <UserData 
         userData = {this.state.userData}
         />
-
       </div>
     )
   }
 }
-  
-
- 
 
 export default App;
